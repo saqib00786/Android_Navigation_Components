@@ -5,14 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".FragmentHome">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/homeFragTextViewID"
+        style="@style/TextAppearance.AppCompat.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/home"
-        android:id="@+id/homeFragTextViewID"
         android:layout_centerInParent="true"
-        style="@style/TextAppearance.AppCompat.Large"
+        android:text="@string/home" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/homeBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeFragTextViewID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:elevation="8dp"
+        android:text="Home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
         />
 
 </RelativeLayout>
