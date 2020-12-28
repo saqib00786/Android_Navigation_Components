@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/fragmentHome"
         android:name="com.example.androidnavigationcomponents.FragmentHome"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_fragmentHome_to_fragmentLogin"
             app:destination="@id/fragmentLogin"
@@ -26,8 +26,8 @@
     <fragment
         android:id="@+id/fragmentLogin"
         android:name="com.example.androidnavigationcomponents.FragmentLogin"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_fragmentLogin_to_fragmentWelcome"
             app:destination="@id/fragmentWelcome"
@@ -39,8 +39,8 @@
     <fragment
         android:id="@+id/fragmentWelcome"
         android:name="com.example.androidnavigationcomponents.FragmentWelcome"
-        android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" >
+        android:label="{userName}"
+        tools:layout="@layout/fragment_welcome">
         <argument
             android:name="userName"
             app:argType="string" />
@@ -50,11 +50,11 @@
         <action
             android:id="@+id/action_fragmentWelcome_to_fragmentHome"
             app:destination="@id/fragmentHome"
-            app:popUpTo="@id/fragmentHome"
-            app:popUpToInclusive="true"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fragmentHome"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
