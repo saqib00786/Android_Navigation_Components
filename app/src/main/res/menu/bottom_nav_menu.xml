@@ -10,6 +10,5 @@
         android:id="@+id/searchBtnID_bottomNav"
         android:title="Search"
         android:icon="@drawable/ic_baseline_search_24"
-        app:showAsAction="ifRoom"
         />
 </menu>

@@ -9,4 +9,5 @@
     <string name="login">Login</string>
     <string name="ok">Ok</string>
     <string name="submit">Submit</string>
+    <string name="setting">Fragment Settings</string>
 </resources>
