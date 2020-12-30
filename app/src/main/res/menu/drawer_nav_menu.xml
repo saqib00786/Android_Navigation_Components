@@ -11,4 +11,9 @@
         android:title="Search"
         android:icon="@drawable/ic_baseline_search_24"
         />
+    <item
+        android:id="@+id/exitBtnID"
+        android:title="Exit"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        />
 </menu>
